@@ -1,0 +1,9 @@
+/*
+ * buzzer.c
+ *
+ *  Created on: Nov 3, 2023
+ *      Author: Ahmed
+ */
+
+#include "gpio.h"
+

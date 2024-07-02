@@ -1,0 +1,16 @@
+19:43:46 **** Incremental Build of configuration Debug for project final_project ****
+make all 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+Finished building: ../timer1.c
+ 
+Building target: final_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,final_project.map -mmcu=atmega32 -o "final_project.elf"  ./DCmotor.o ./PWM.o ./external_eeprom.o ./gpio.o ./keypad.o ./lcd.o ./timer1.o ./twi.o ./uart.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [final_project.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+19:43:47 Build Failed. 2 errors, 0 warnings. (took 527ms)
+

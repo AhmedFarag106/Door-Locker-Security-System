@@ -1,0 +1,23 @@
+/*
+ * timer1.c
+ *
+ *  Created on: Nov 3, 2023
+ *      Author: Ahmed
+ */
+# include "timer1.h"
+#include <avr/io.h>
+#include <avr/interrupt.h>
+
+void Timer1_init(const Timer1_ConfigType * Config_Ptr)
+{
+	TCCR1A = (1<<FOC1A);
+
+
+	TCCR1B = (Config_Ptr->mode << WGM12);
+
+	TCCR1B = (TCCR1B & 0xF8) | (Config_Ptr->prescaler & 0x7) ;
+
+
+
+}
+

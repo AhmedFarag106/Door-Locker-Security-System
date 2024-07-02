@@ -1,0 +1,13 @@
+/*
+ * buzzer.h
+ *
+ *  Created on: Nov 3, 2023
+ *      Author: Ahmed
+ */
+
+#ifndef BUZZER_H_
+#define BUZZER_H_
+
+void Buzzer_init();
+
+#endif /* BUZZER_H_ */
